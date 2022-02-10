@@ -1,0 +1,14 @@
+
+.cardContainer {
+  background-color: rebeccapurple;
+  overflow: scroll;
+  height: 200px;
+}
+
+.card {
+  
+
+  &__image {
+    height: 100px;
+  }
+}

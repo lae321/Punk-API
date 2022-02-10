@@ -6,10 +6,12 @@ import beers from "./data/beer";
 const App = () => {
   return (
     <div className="App">
-      <Navbar />
-      <Main
-        beersArr = {beers}
-      />
+      <div>
+        <Navbar />
+      </div>
+        <Main
+          beersArr = {beers}
+        />
     </div>
   );
 };
