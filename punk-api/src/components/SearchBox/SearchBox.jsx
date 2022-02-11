@@ -13,6 +13,7 @@ const SearchBox = (props) => {
         value={searchTerm}
         onInput={handleInput}
         className="search-box__input"
+        placeholder="Search"
       />
     </form>
   );
