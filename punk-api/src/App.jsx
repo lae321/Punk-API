@@ -6,9 +6,7 @@ import beers from "./data/beer";
 const App = () => {
   return (
     <div className="App">
-      
-        <Navbar beersArr = {beers}/>
-      
+      <Navbar beersArr={beers} />
     </div>
   );
 };
