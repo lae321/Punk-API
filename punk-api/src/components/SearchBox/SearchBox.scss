@@ -1,0 +1,13 @@
+.search-box{
+  height: 75px;
+  background-color: rgb(1, 79, 134);
+  border-radius: 0 0 15px 15px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 5px 0px 20px;
+
+  &__input {
+    margin: 23px;
+    height: 20px;
+  }
+}
