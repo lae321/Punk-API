@@ -35,7 +35,7 @@ const SearchBox = (props) => {
         className="search-box__check"
         onChange={handleCheckedClassic}
       />
-      <label for="acidic">Acidic (pH )</label>
+      <label for="acidic">Acidic</label>
       <input
         type="checkbox"
         name="acidic"
