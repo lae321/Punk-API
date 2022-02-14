@@ -25,7 +25,8 @@ const NavBar = (props) => {
   };
 
   const filteredByClassic = beersArr.filter((beer) => {
-    return beer.abv > 6;
+    const splitDate = beer.first_brewed.split("/");
+    return splitDate[1] < 2010;
   });
 
   const handleCheckedpH = () => {
