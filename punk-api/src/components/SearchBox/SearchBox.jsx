@@ -1,8 +1,14 @@
 import React from "react";
-import "./SearchBox.scss"
+import "./SearchBox.scss";
 
 const SearchBox = (props) => {
-  const { searchTerm, handleInput } = props;
+  const {
+    searchTerm,
+    handleInput,
+    handleCheckedABV,
+    handleCheckedClassic,
+    handleCheckedpH,
+  } = props;
 
   return (
     <form className="search-box">
@@ -14,6 +20,27 @@ const SearchBox = (props) => {
         onInput={handleInput}
         className="search-box__input"
         placeholder="Search"
+      />
+      <label for="high-abv">High ABV (6%)</label>
+      <input
+        type="checkbox"
+        name="high-abv"
+        className="search-box__check"
+        onChange={handleCheckedABV}
+      />
+      <label for="classic-range">Classic Range</label>
+      <input
+        type="checkbox"
+        name="classic-range"
+        className="search-box__check"
+        onChange={handleCheckedClassic}
+      />
+      <label for="acidic">Acidic</label>
+      <input
+        type="checkbox"
+        name="acidic"
+        className="search-box__check"
+        onChange={handleCheckedpH}
       />
     </form>
   );
